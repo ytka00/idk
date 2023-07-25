@@ -2,9 +2,9 @@ import string
 import random
 found=[];found2=[];f=open("words.txt","r");lines=f.readlines();rkey=[];m1='';m2=''
 charstr = 'abcdefghijklmnopqrstuvwxyz '
-for i in range(random.randint(2,6):
-    m1+=lines[random.randrang(len(lines))][:-1]+' '
-    m2+=lines[random.randrang(len(lines))][:-1]+' '
+for i in range(random.randint(2,6)):
+    m1+=lines[random.randrange(len(lines))][:-1]+' '
+    m2+=lines[random.randrange(len(lines))][:-1]+' '
 m1=m1[:-1];m2=m2[:-1]
 key=''.join(random.choices(string.ascii_lowercase,k=len(m1)*2))
 def charfind(egyes,kettes,hossz,jel):
@@ -84,7 +84,7 @@ for c in range(len(lines)):
         megfejtes(c1,kezd[:len(kezd)-1]+' ',c2)
 def idkvalamilyenloop():
     for h in range(len(found2)):
-        newkey=getkey(found[h][len(rkey[h]):],c2[len(rkey[h]:len(found[h])]);rkey[h]+=(newkey)
+        newkey=getkey(found[h][len(rkey[h]):],c2[len(rkey[h]):len(found[h])]);rkey[h]+=(newkey)
         idk2(c1,rkey[h],len(rkey[h]),h)
 valami=False
 while valami==False:idkvalamilyenloop()
