@@ -2,7 +2,7 @@ import string
 allowed=set(string.ascii_lowercase+' ');charstr='abcdefghijklmnopqrstuvwxyz '
 def charfind(egyes,kettes,jel):
     megoldas= ''
-    for a in range(len(egyes):
+    for a in range(len(egyes)):
         j=0;z=0
         while egyes[a]!=charstr[j]:j+=1
         while kettes[a]!=charstr[z]:z+=1
@@ -11,7 +11,7 @@ def charfind(egyes,kettes,jel):
     return(megoldas)
 def rejtjelezes():
     uzenet=str(input('Adja meg az üzenetet! '));key=str(input('Adja meg a kulcsot! '));cipher = ''
-    if all((ch in allowed for ch) in uzenet or key)==False:print('Az üzenet vagy kulcs hibás karaktereket tartalmaz');exit(1)
+    if all((ch in allowed for ch in uzenet) or key)==False:print('Az üzenet vagy kulcs hibás karaktereket tartalmaz');exit(1)
     if len(uzenet)>len(key):print('Hibás adatokat adott meg');exit(1)
     cipher=charfind(uzenet,key,'');print(cipher)
 def megfejtes():
